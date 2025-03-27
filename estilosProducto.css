@@ -1,0 +1,134 @@
+.inicioProducto{
+    background-color: white;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cabezera{
+    background-color: white;
+    width: 530px;
+    height: 35px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.botonProducto{
+    width: 200px;
+    padding: 10px;
+    background-color: indigo;
+    color: white;
+    cursor: pointer;
+    margin: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    animation-name: bordeBoton;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bordeBoton{
+    0%{
+       box-shadow: 0px 0px 10px 10px lawngreen;
+    }
+    100%{
+        border: 0px solid lightgray;
+    }
+}
+
+.botonProducto:hover{
+    background-color: black;
+}
+
+.formulario{
+    background: linear-gradient(90deg, indigo, black);
+    width: 500px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    animation-name: bordeFormulario;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes bordeFormulario{
+    0%{
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    100%{
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+}
+
+
+.formulario:hover{
+    background: linear-gradient(90deg, black, indigo);
+}
+
+label{
+    color: white;
+    font-size: 20px;
+}
+
+.control{
+    background-color: transparent;
+    width: 220px;
+    height: 80px;
+    margin: 5px;
+ 
+}
+
+.caja{
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    outline: none;
+    border-radius: 10px;
+    border-color: indigo;
+    margin: 10px;
+    text-align: center;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.seleccion{
+    width: 210px;
+    height: 30px;
+    margin-top: 12px;
+}
+
+.fecha{
+    background-color: white;
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+}
+
+.nivel{
+    width: 210px;
+}
+
+
+.color{
+    width: 200px;
+    height: 40px;
+}
+
+.descripcion{
+    background-color: indigo;
+    border-color: white;
+    color: white;
+}
+
